@@ -63,23 +63,38 @@
         <h2 id="Listas">Listas ordenadas e não ordenadas</h2>
         <small><a href="#Inicio">(Voltar)</a></small>
         <p>Na aula sobre listas, vimos dois tipos de listas: as listas ordenadas e as listas não ordenadas.</p>
-        <p>As <strong><u>listas ordenadas</u></strong> são aquelas que seguem uma sequência numérica, iniciando do número 1.</p>
-        <p>As <strong><u>listas não ordenadas</u></strong> não seguem uma sequência, são apenas itens dispostos em uma lista.</p>
+        <p>As <strong><u><abbr title="Listas Ordenadas"> OL</abbr></u></strong> são aquelas que seguem uma sequência numérica, iniciando do número 1.</p>
+        <p>As <strong><u><abbr title="Listas não Ordenadas">UL</abbr></u></strong> não seguem uma sequência, são apenas itens dispostos em uma lista.</p>
         <p>Para as listas ordenadas utilizamos a tag <mark><i>"ol"</i></mark> e para as listas não ordenadas utilizamos a tag <mark><i>"ul"</i></mark>. Além dessas duas tags, utilizamos também a tag <mark><i>"li"</i></mark>, que serve para adicionar os itens da lista, já que apenas criar uma lista não é o suficiente para sairmos digitando itens.</p>
         <p>Exemplo de lista ordenada:</p>
         <ol>
             <li>Item 1</li>
-            <li>Item 2</li>
+            <li><del>Item 2</del></li>
             <li>Item 3</li>
         </ol>
         <p>Exemplo de lista não ordenada:</p>
         <ul>
             <li>Item 1</li>
-            <li>Item 2</li>
+            <li><del>Item 2</del></li>
             <li>Item 3</li>
         </ul>
         <h2 id="Links">Links</h2>
         <small><a href="#Inicio">(Voltar)</a></small>
-        <p></p>
+        <p>Links são basicamente ligações para outras páginas da web, ou páginas dentro do prórpio site, ou até mesmo para tópicos dentro da página atual, nesse caso, chamamos de ancoragem.</p>
+        <p>A tag utilizada para links é a tag <mark><i>a</i></mark> junto do atributo <mark><i>href</i></mark>. Entre as tags, preenchemos com o texto que será exibido para o usuário na página, porém esse texto será clicável.</p>
+        <p>Por padrão, ao clicarmos no link ele será aberto na mesma aba do navegador. Para que o link seja aberto em outra aba do navegador, adicionamos na tag o atributo <mark><i>target</i></mark>.</p>
+        <p>No atributo target temos 4 opções: _blank, _parent, _self e _top. As opções parent e top praticamente não são mais usadas, por isso, focaremos em explicar as outars duas.</p>
+        <p style="color: green"><u>_self:</u> O self tem o comportamento padrão do navegador, ou seja, ao clicarmos no link ele será aberto na aba atual.</p>
+        <p style="color: green"><u>_blank:</u> Ao clicar no link, será aberto em uma nova aba.</p>
+        <p>Para a navegação entre páginas dentro do prórpio site, no atributo <mark><u>href</u></mark>, ao invés de passarmos o site para o qual o usuário deve ser redirecionado, passaremos o nome do arquivo no qual a página foi construída, por exemplo: about.html. Para voltarmos para a página principal do site, na página about, faremos o mesmo processo, porém, indicando o arquivo onde a página principal foi construída dentro do atributo href.</p>
+        <h2 id="Referências">Referências</h2>
+        <small><a href="#Inicio">(Voltar)</a></small>
+        <p><a href="https://www.youtube.com/watch?v=2lBJVEYDwlM" target="_blank">Inspetor de elementos</a></p>
+        <p><a href="https://www.youtube.com/watch?v=hMAvQtQ97eE" target="_blank">Estrutura básica do HTML</a></p>
+        <p><a href="https://www.youtube.com/watch?v=e9WZHMVm-2k" target="_blank">Tags</a></p>
+        <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes" target="_blank">Atributos das tags</a></p>
+        <p><a href="https://getbootstrap.com.br/docs/4.1/content/typography/" target="_blank">Tipografia</a></p>
+        <p><a href="https://www.youtube.com/watch?v=t_Oml4Q_zJY" target="_blank">Listas ordenadas e não ordenadas</a></p>
+        <p><a href="https://www.youtube.com/watch?v=LeOVXQDsAIY" target="_blank">Links</a></p>
     </body>
 </html>
