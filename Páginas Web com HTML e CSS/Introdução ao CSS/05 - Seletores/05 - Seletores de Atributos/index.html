@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+        * Seletores: definem em quais elementos nós vamos aplicar o CSS.
+        * 1. Seletor de Tag/Tipo
+        * 2. Seletor de Id
+        * 3. Seletor de Classes
+        * 4. Seletor Universal
+        * 5. Seletor de Atributo
+        */
+
+        [title] {
+            color: red; /* Vai atribuir a cor vermelha a todos os elementos que tiverem o atributo title */
+        }
+        [title="Disneyplus"] {
+            color: lightgreen; /* Vai atribuir a cor lightgreen a todos os elementos que tiverem o atributo title com o valor Disneyplus */
+        }
+        [title~="Streaming"] {
+            background: lightblue; /* Vai deixar o fundo azul de todos os elementos que tiverem o atributo title, com a palavra Streaming em seu valor, mesmo que o valor não seja somente a palavra Streaming apenas. Ou seja, pega o valor aproximado. */
+        }
+        [title|="Streaming"] {
+            background: darkorange; /* Vai deixar o fundo laranja de todos os elementos que tiverem o atributo title, com o valor Streaming seguido imediatamente por um hífen. */
+        }
+        [href^="http://"] {
+            background: purple; /* Vai mudar a cor de fundo e da fonte de todos os elementos que tiverem o atributo href, com o prefixo (que iniciam com) http:// */
+            color:aquamarine;
+        }
+        [href$="login"] {
+            background: lightcoral; /* Vai mudar a cor de fundo e da fonte de todos os elementos que tiverem o atributo href, com o sufixo (que termina com) login */
+            color: darkgreen;
+        }
+        [href*="login"] {
+            background: red; /* Vai deixar o fundo vermelho de todo elemento que tiver o atributo href, e que contenha a palavra login, independente da posição em que a palavra esteja */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Streaming-Netflix" href="https://www.netflix.com">Netflix</a>
+            </li>
+            <li>
+                <a title="Streaming Prime Video" href="https://www.primevideo.com">Prime Video</a>
+            </li>
+            <li>
+                <a title="Spotify" href="https://open.spotify.com">Spotify</a>
+            </li>
+            <li>
+                <a title="Disneyplus">Disney Plus</a>
+            </li>
+            <li>
+                <a title="Streaming HBO" href="http://www.hbo.com">HBO</a>
+            </li>
+            <li>
+                <a title="Streaming HBO" href="https://www.hbomax.com/login">HBO Max</a>
+            </li>
+            <li>
+                <a href="https://www.login.netflix.com">Netflix</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
