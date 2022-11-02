@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+        Combinadores: qual tipo de relação entre dois seletores.
+
+        1. Combinador descendente (espaço)
+        2. Combinador filho (>)
+        3. Comnbinador irmão adjascente (+)
+        4. Combinador irmão em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+        */
+        
+        li {
+            color: red; /* Aplica à todos os li que descendem de outro li a cor preta */
+        }
+        #lista-01 li {
+            background: lightblue; /* Aplica a cor de fundo azul claro para todos os li que descendem de elementos que tenham a o id=lista-01 */
+        }
+        .fundo-verde li {
+            background: lightgreen; /* Aplica a cor de fundo verde claro para todos os li que descendem de elementos que tenham a classe=fundo-verde. Obs: Seria aplicado aos itens 1 e 2, mas por causa do código css acima só foi aplicado ao item 2. */
+        }
+        .fundo-azul li {
+            background: lightpink; /* Aplica a cor de fundo rosa claro para todos os li que descendem de elementos que tenham a classe=fundo-azul */
+        }
+        .fundo-verde #sublista-01 li {
+            color: black;  /* Aplica a cor preta para a fonte de todos os li que descendem de elementos que tenham a classe=fundo-verde ou o id=sublista-01 */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
