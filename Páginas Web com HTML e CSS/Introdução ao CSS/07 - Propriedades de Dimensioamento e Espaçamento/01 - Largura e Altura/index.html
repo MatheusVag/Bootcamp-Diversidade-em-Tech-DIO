@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+        *Propriedades Básicas do CSS
+        *Width: Largura
+        *height: Altura
+        */
+
+        div.teste {
+            background: lightblue;
+            width: auto;   /* Irá definir uma largura automática para a div, que nesse caso é a área do site que vemos */
+            height: initial;  /* Aplicará o valor padrão da propriedade, que no caso de height é "auto", ou seja, a propriedade se comportará como se tivesse com o valor "auto" */
+        }
+        #div-01 {
+            background: lightblue;
+            width: 200px;
+            height: 200px;
+        }
+        #div-02 {
+            background: lightgreen;
+            height: inherit; /* Definirá o valor da altura de acordo com o do elemento pai, no caso, a div com id="div-01". Nesse caso, também terá altura de 200px, que é a altura da div com id="div-01" */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>Trilha de CSS</div> Primeiro exemplo da aula-->
+    <br><br>
+    <div class="teste">Trilha de CSS</div>
+    <br><br>
+    <div id="div-01">
+        sou a div 01
+        <div id="div-02">
+            sou a div 02
+        </div>
+    </div>
+
+
+    <!-- div {
+        background: lightblue;
+        width: 200px;   /* Deixa a div com 200 pixels(px) de largura. */
+        height: 200px;  /* Deixa a div com 200 pixels(px) de altura */
+    }  Primeiro exemplo da aula (foi necessário apagar)-->
+    
+
+</body>
+</html>

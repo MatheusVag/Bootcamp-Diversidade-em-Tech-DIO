@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            color: white;
+
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #elemento-01 {
+            background: orange;
+        }
+
+        #elemento-02 {
+            background: purple;
+            box-sizing: border-box;
+        }
+
+        /*
+        *width = largura + borda + padding
+
+        A largura dos elementos é calculada da forma acima, ou seja, mesmo que definamos uma largura com a 
+        propriedade width, se adicionarmos padding ou borda, a largura do elemento aumentará. E esse é o 
+        comportamento de um dos valores aceitos pela propriedade box-sizing, o valor "content-box".
+        No caso acima, a largura da div seria de 240px, os 200 definidos no width + 20px de cada lado por causa do 
+        padding.
+
+        Para que a largura que foi definida no width seja respeitada, utilizamos o valor "border-box" no box-sizing.
+        Isso fará com que o valor da altura e largura sejam diminuídos para que, quando esse valor for somado às 
+        bordas e padding adicionados, resulte exatamente no valor que foi definido no width e height.
+        */
+    </style>
+</head>
+<body>
+    <div id="elemento-01">
+    </div>
+    <div id="elemento-02">
+    </div>
+</body>
+</html>

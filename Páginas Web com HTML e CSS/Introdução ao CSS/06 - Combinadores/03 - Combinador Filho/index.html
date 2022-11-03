@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*
+        Combinadores: qual tipo de relação entre dois seletores.
+
+        1. Combinador descendente (espaço)
+        2. Combinador filho (>) --------------- Vai selecionar todos os elementos que são filhos imediatos, ou seja, o filho direto do elemento que está especificado à esquerda do seletor.
+        3. Comnbinador irmão adjascente (+)
+        4. Combinador irmão em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+        */
+
+        div p {
+            background: lightgreen;
+        }
+        div > p {
+            color: red;   /* Aplica a cor de fonte vermelha em todas os parágrafos que forem filhos diretos de uma div */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Parágrafo 1 dentro da div</p>
+        <p>Parágrafo 2 dentro da div</p>
+        <span>
+            <p>Parágrafo 3 dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 4, fora da div</p>
+    <p>Parágrafo 5, fora da div</p>
+</body>
+</html>
