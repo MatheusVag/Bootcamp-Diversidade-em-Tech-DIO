@@ -1,0 +1,46 @@
+body {
+    height: 200vh;
+    background-color: crimson;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed peru;
+    color: purple;
+    padding: 30px;
+    font-size: 70px;
+    font-weight: 900;
+    /*background-color: black;*/
+
+    /* O fundo abaixo foi pego do css pattern */
+
+    background:
+radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+#8a3;
+background-size: 20px 20px;
+}
+
+#padding-box {
+    background-clip: padding-box;
+}
+
+#border-box {
+    background-clip: border-box;
+}
+
+#content-box {
+    background-clip: content-box;
+}
+
+#text {
+    -webkit-background-clip: text;    /* Com essa propriedade nós conseguimos setar o fundo definido para o texto e não para o elemento em si */
+    color: transparent;
+    background-clip: text;
+    border: 5px solid black;
+}

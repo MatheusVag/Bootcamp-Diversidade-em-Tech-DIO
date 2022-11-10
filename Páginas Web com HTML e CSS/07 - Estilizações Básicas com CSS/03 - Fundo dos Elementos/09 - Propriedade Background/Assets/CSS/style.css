@@ -1,0 +1,25 @@
+body {
+    height: 200vh;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed peru;
+    color: white;
+    padding: 30px;
+    font-size: 70px;
+    font-weight: 900;
+    background: 
+        url(../Images/pexels-fiona-.jpg) /* background-image */
+        top center / 200px 200px /* background position / background-size */
+        no-repeat /* background-repeat */
+        scroll /* background-attachment */
+        padding-box /* background-origin */
+        content-box /* background-clip */
+        purple; /* background-color */
+}

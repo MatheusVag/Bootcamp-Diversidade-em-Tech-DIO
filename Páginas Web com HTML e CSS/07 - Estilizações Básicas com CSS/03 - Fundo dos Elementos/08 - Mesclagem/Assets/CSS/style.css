@@ -1,0 +1,84 @@
+body {
+    height: 200vh;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    border: 15px dashed peru;
+    color: black;
+    padding: 30px;
+    font-size: 70px;
+    font-weight: 900;
+    background-image: url(../Images/pexels-fiona-.jpg);
+    background-size: cover;
+    background-color: crimson;
+}
+
+#normal {
+    background-blend-mode: normal;
+}
+
+#multiply {
+    background-blend-mode: multiply;
+}
+
+#screen {
+    background-blend-mode: screen;
+}
+
+#overlay {
+    background-blend-mode: overlay;
+}
+
+#darken {
+    background-blend-mode: darken;
+}
+
+#lighten {
+    background-blend-mode: lighten;
+}
+
+#color-dodge {
+    background-blend-mode: color-dodge;
+}
+
+#color-burn {
+    background-blend-mode: color-burn;
+}
+
+#hard-light {
+    background-blend-mode: hard-light;
+}
+
+#soft-light {
+    background-blend-mode: soft-light;
+}
+
+#difference {
+    background-blend-mode: difference;
+}
+
+#exclusion {
+    background-blend-mode: exclusion;
+}
+
+#hue {
+    background-blend-mode: hue;
+}
+
+#saturation {
+    background-blend-mode: saturation;
+}
+
+#color {
+    background-blend-mode: color;
+}
+
+#luminosity {
+    background-blend-mode: luminosity;
+}
