@@ -1,0 +1,14 @@
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+}
+
+#exemplo-1 {
+    border-image-source: url(../Images/pexels-fiona-.jpg); /* Definindo uma imagem como borda */
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(lightgreen, aqua); /* Definindo um gradiente na borda */
+}

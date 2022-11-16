@@ -1,0 +1,24 @@
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+    margin: 60px auto;
+}
+
+#exemplo-resumido {  /* Mostra como utilizar a função resumida border-image */
+    border-image: url(../Images/Frame\ 1.png) /* source */ 169 / 10px / 1/* slice */ round /* repeat */;
+    /* Após o border-image-slice (169), adicionamos a largura da imagem da borda, separando o valor do slice por uma barra. Ao adicionarmos outra barra podemos adicionar o valor do outset */
+}
+
+#exemplo-1 {
+    border-image-source: url(../Images/Frame\ 1.png); /* Definindo uma imagem como borda */
+    border-image-repeat: repeat;
+    border-image-slice: 169;
+    border-image-outset: 30px; /* Afasta a borda do elemento em 30px */
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(lightgreen, purple);
+    border-image-slice: 10;
+}

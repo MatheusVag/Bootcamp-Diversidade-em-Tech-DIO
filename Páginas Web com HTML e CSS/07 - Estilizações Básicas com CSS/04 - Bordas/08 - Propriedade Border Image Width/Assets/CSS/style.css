@@ -1,0 +1,25 @@
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+}
+
+#exemplo-1 {
+    border-image-source: url(../Images/Frame\ 1.png); /* Definindo uma imagem como borda */
+    border-image-repeat: repeat;
+    border-image-slice: 169;
+    border-image-width: 10px;
+}
+
+#exemplo-2 {
+    border-image-source: url(../Images/Frame\ 1.png); /* Definindo uma imagem como borda */
+    border-image-repeat: repeat;
+    border-image-slice: 169 fill;
+}
+
+#exemplo-3 {
+    border-image-source: linear-gradient(purple, lightgreen);
+    border-image-slice: 10
+    ;
+}

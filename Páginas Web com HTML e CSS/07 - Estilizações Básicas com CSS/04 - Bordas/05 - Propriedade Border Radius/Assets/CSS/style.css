@@ -1,0 +1,28 @@
+.exemplo {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    border: 5px solid purple;
+
+    border-radius: 10px;
+}
+
+/*
+
+Podemos aplicar valores diferentes para cada canto:
+
+2 valores: O 1º corresponde ao canto superior esquerdo e inferior direito. O 2º valor aos demais cantos.
+3 valores: O 1º valor corresponde ao canto superior esquerdo, o 2º valor aos cantos superior direito e inferior esquerdo e o 3º ao canto inferior direito.
+4 valores: Cada um dos valores é aplicado à um dos cantos, iniciando no superior esquerdo e seguindo no sentido horário.
+
+*/
+
+#radius {
+    border-radius: 50px/100px;
+}
+
+/*
+
+Da maneira acima, especificamos um arredondamento para cada sentido (horizontal e vertical)
+
+*/
