@@ -1,0 +1,11 @@
+h1 {
+    font-family: Arial;
+}
+
+p {
+    font-family: monospace;
+}
+
+li {
+    font-family: "Times New Roman", "Arial", sans-serif;  /* Técnica Fall Back */
+}

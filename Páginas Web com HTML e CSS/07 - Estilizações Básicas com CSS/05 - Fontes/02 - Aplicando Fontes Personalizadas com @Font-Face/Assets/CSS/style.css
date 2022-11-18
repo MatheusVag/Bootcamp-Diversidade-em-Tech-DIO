@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../Fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../Fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+/* No exemplo acima podemos esclher qual estilo da fonte Roboto será escolhido através da propriedade font-weight
+   , apesar de a fonte ser a mesma escolhemos entre a Roboto-Regular e a Roboto-Bold apenas definindo valores 
+   diferentes para a propriedade font-weight */
