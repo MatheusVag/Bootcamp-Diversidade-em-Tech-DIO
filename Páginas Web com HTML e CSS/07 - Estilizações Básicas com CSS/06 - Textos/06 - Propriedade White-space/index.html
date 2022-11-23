@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo {
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        span {
+            background-color: seagreen;
+            color: white;
+        }
+
+        /* Para o valor normal, que é o valor padrão, uma sequência de espações em branco é combinada em um 
+           único espaço em branco. E quebras de linha só são feitas quando o texto atinge o limite do elemento. */
+
+        #nowrap {
+            white-space: nowrap; /* As sequências de espaços em branco são combinadas em apenas um espaço e quebras
+                                    de linha são completamente ignoradas */
+        }
+
+        #pre {
+            white-space: pre;  /* Os espaços em branco e quebras de linhas são preservados e exibidos exatamente como
+                                  foi digitado no HTML */
+        }
+
+        #pre-line {
+            white-space: pre-line; /* As sequências de espaços em branco são combinadas em um único espaço e o texto
+                                      é quebrado quando necessário e nas quebras de linha que foram feitas no HTML */
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap; /* Os espaços em branco são preservados conforme definido no HTML, e o texto 
+                                      mantém as quebras de linha do HTML e é quebrado quando necessário */
+        }
+
+        #break-spaces {
+            white-space: break-spaces; /* Funciona da mesma forma que o pre-wrap, porém, no pre-wrap, uma sequência
+                                          de espaços pode ultrapassar o limite do contâiner, no break-spaces essa 
+                                          essa sequência de espaços é continuada após uma quebra de linha */
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>white-space</code></h2>
+
+    <p>Define como os espaços em branco do texto de um determinado elemento é tratado.</p>
+    <i>Exemplos:</i> <br><br>
+
+    <code>white-space: normal;</code>
+    <p class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+
+    <code>white-space: nowrap;</code>
+    <p id="nowrap" class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+
+    <code>white-space: pre;</code>
+    <p id="pre" class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+
+    <code>white-space: pre-line;</code>
+    <p id="pre-line" class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+
+    <code>white-space: pre-wrap;</code>
+    <p id="pre-wrap" class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+
+    <code>white-space: break-spaces;</code>
+    <p id="break-spaces" class="exemplo">
+        <span>
+            Lorem,      ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid error     
+            facilis, voluptatibus quisquam cum veritatis repellendus ut iste aliquam dolores    
+                cumque nisi quos provident consequuntur! Impedit perspiciatis quasi culpa.              
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati molestiae,    
+            necessitatibus dolorum laudantium ipsam    minus quam odit itaque sunt maxime rerum       
+            quod fuga repellendus quia praesentium recusandae. Molestiae, dolorem repudiandae!  
+        </span>
+    </p>
+</body>
+</html>
