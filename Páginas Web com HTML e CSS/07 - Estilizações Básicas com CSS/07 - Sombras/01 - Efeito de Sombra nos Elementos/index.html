@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        #ex1 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid green;
+            margin: 40px auto;
+            background-color: greenyellow;
+
+            box-shadow: 20px 20px 10px -5px rgba(50, 150, 50, 50%); 
+            /* O primeiro valor se refere à sombra no eixo horizontal e o segundo à sombra no eixo vertical. O 
+               terceiro valor adiciona um efeito de desfoque na sombra. Um quarto valor indica a propagação da 
+               sombra */
+        }
+
+        #ex2 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid green;
+            margin: 40px auto;
+            background-color: greenyellow;
+
+            box-shadow: inset 20px 20px 10px -5px rgba(50, 150, 50, 50%);
+            /* Ao adicionarmos o valor inset no inicio, a sombra será interna ao elemento */
+        }
+
+        /* É possível termos várias camadas de sombras, basta separar os valores da segunda camada e os da
+           primeira com uma vírgula */
+
+        #ex3 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid green;
+            margin: 40px auto;
+            background-color: greenyellow;
+
+            box-shadow: inset 20px 20px 10px -5px rgba(50, 150, 50, 50%), 20px 20px 10px -5px black;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            object-fit: cover;
+            filter: drop-shadow(10px 10px 5px gray);
+            /* Com a propriedade filter, junto com a função drop-shadow, é possível aplicar sombra no conteúdo 
+               de imagens png. A sombra é aplicada nos elementos da imagem e não nas bordas retangulares da 
+               imagem */
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>box-shadow</code></h2>
+
+    <div id="ex1"></div>
+    <div id="ex2"></div>
+    <div id="ex3"></div>
+
+    <img src="../01 - Efeito de Sombra nos Elementos/Assets/Images/Frame 1.png" alt="">
+</body>
+</html>

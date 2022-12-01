@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo {
+            width: 120px;
+            height: 120px;
+            color: black;
+            background-color: chartreuse;
+        }
+
+        #exemplo-01 {
+            writing-mode: horizontal-tb; /* Faz o texto fluir horizontalmente da esquerda para a direita e a próxima linha é posicionada abaixo da anterior */
+        }
+
+        #exemplo-02 {
+            writing-mode: vertical-rl; /* Faz com que o texto flua verticalmente de cima para baixo, e a próxima linha é adicionada à esquerda da linha anterior (O -rl siginifica right left, ou seja, direita para esquerda) */
+        }
+
+        #exemplo-03 {
+            writing-mode: vertical-lr; /* Faz o mesmo que o valor anterior, porém, a próxima linha é adicionada à direita da linha anterior (O -lr significa left right, ou seja, esquerda para direita) */
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>writing-mode</code></h2>
+    <p>Define a orientação do texto (vertical ou horizontal)</p>
+
+    <code>writing-mode: horizontal-tb;</code>
+    <p id="exemplo-01" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+
+    <code>writing-mode: vertical-rl;</code>
+    <p id="exemplo-02" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+
+    <code>writing-mode: vertical-lr;</code>
+    <p id="exemplo-03" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+</body>
+</html>

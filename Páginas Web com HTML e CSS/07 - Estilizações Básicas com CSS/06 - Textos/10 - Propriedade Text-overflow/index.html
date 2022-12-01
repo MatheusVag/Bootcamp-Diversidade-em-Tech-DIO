@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo {
+            width: 200px;
+            color: black;
+            background-color: chartreuse;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #exemplo-01 {
+            text-overflow: clip; /* O texto que excede os limites do elemento simplesmente é cortado, sem que nada indique sua continuidade */
+        }
+
+        #exemplo-02 {
+            text-overflow: ellipsis; /* Adiciona retsências no limite do elemento, indicando que há mais texto que não está sendo exibido */
+        }
+
+        #exemplo-03 {
+            text-overflow: 'Continua'; /* O texto definido é aplicado ao final da frase que antecede o limite do elemento, porém, só funciona no browser firefox */
+        }
+    </style>
+</head>
+<body>
+    <h2>Propriedade <code>writing-mode</code></h2>
+    <p>Define a orientação do texto (vertical ou horizontal)</p>
+
+    <code>text-overflow: clip;</code>
+    <p id="exemplo-01" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="exemplo-02" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+
+    <code>text-overflow: string;</code>
+    <p id="exemplo-03" class="exemplo">
+        Chega de saudade
+        A realidade é que sem ela não há paz
+    </p>
+</body>
+</html>
